@@ -1,0 +1,113 @@
+<html>
+<head>
+
+<tittle><H2 align="center">
+		    EJERCICIO EN JAVA SCRIPT
+			<br/>
+		    ESTA ES LA INFORMACION PARA HACER REFERENCIAS EN JAVA SCRIPT
+<tittle/><h2/>
+<br/>
+
+<head/>
+
+<body bgcolor= "lightblue">
+
+
+<img src="imagenes/logo.jpg" width="600 height="600"/>
+<br/>
+
+<a href="javascript:void(window.open('https://www.intel.com/content/www/us/en/homepage.html/sharer/sharer.php?u='+encodeURIComponent(location)));">INTEL</a>
+
+<br/>
+<br/>
+
+
+<!-- https://norfipc.com/web/javascript-facil-paginas-web-ejemplos.html -->
+
+
+<h3>ENLACES GENERALES<h3>
+<H2 align="left">
+<li><ul><a href="javascript:(function(){alert('Hola gente')})()">Mensaje</a><li/><ul/>
+<li><ul><a href="javascript:void(window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location)));">Facebook</a><li/><ul/>
+<li><ul><a href="javascript:window.print();">Imprimir</a><li/><ul/>
+<li><ul><a href="javascript:window.location.reload();">Refrescar</a><li/><ul/>
+<h2/>
+<h3>LISTADO DE CURSOS</h3>
+
+<table>
+<tr>
+  <td><strong>Curso</strong></td>
+  <td><strong>Horas</strong></td>
+  <td><strong>Horario</strong></td>
+</tr>
+
+<tr>
+  <td>INFORMATICA</td>
+  <td>20</td>
+  <td>16:00 - 20:00</td>
+</tr>
+
+<tr>
+  <td>ELECTRICIDAD</td>
+  <td>20</td>
+  <td>16:00 - 20:00</td>
+</tr>
+
+<tr>
+  <td>ESTADISTICA</td>
+  <td>60</td>
+  <td>16:00 - 20:00</td>
+</tr>
+</table>
+
+
+<!-- FUNCION CONFIRM  -->
+<script>
+function confirmacion() {
+	var pregunta = confirm("¿Deseas visitar la página de ARGOS?")
+	if (pregunta){
+		alert("Te envio alli rapidamente")
+		window.location = "https://tecnologicoargos.edu.ec/";
+	}
+	else{
+		alert("Quizás en otro momento...\n Gracias de todas formas")
+	}
+}
+</script>
+
+<!-- FUNCION PROMPTER  -->
+<button type="button" onclick="confirmacion()" >Probar confirm</button>
+
+<script>
+function prompter() {
+var reply = prompt("Buenas ¿cuál es tu nombre?", "")
+alert ( "Es un gusto tenerte aquí " + reply + "!")
+}
+</script>
+<button type="button" onclick="prompter()">Probar prompt</button>
+
+
+<!-- FUNCION POPUP: Una función es un pedazo de código que permanece inactivo hasta que es llamada por un evento determinado por su nombre.
+En este ejemplo se llama con un botón.-->
+<script>
+function popup() {
+    alert("Hola gente")
+}
+</script>
+<button type="button" onclick="popup()">Probar función</button>
+
+
+<script> 
+var age = 18;
+var ella = 'El señor';
+var el = 'La señora';
+document.write(ella + " tiene " + age + " años\n");
+document.write(el + " tiene " + age + " años");
+</script
+
+
+
+
+
+<body/>
+<html/>
